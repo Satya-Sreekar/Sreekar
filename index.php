@@ -5,283 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satya Sreekar Pattaswami</title>
-  <style>
-    div {
-      overflow-x: hidden;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    header {
-      text-align: center;
-      padding: 4vw 0;
-      /* changed to vw */
-      background-color: #3498db;
-      color: #fff;
-      width: 100%;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-
-    .subtitle {
-      margin-top: 0.5vw;
-      /* changed to vw */
-      font-size: 1.2em;
-      color: #ecf0f1;
-    }
-
-    .contact-info {
-      margin-top: 2vw;
-      /* changed to vw */
-    }
-
-    .contact-info a {
-      color: #ecf0f1;
-      text-decoration: none;
-      margin-right: 1.5vw;
-      /* changed to vw */
-    }
-
-    section {
-      width: calc(50% - 7.5vw);
-      /* changed to vw */
-      margin: 1vw auto;
-      /* changed to vw */
-      background-color: #fff;
-      box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
-      /* changed to vw */
-      padding: 2vw;
-      /* changed to vw */
-      opacity: 0;
-      transform: translateY(2vw);
-      /* changed to vw */
-      transition: opacity 0.5s, transform 0.5s;
-    }
-
-    h2 {
-      color: #3498db;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 1vw;
-      /* changed to vw */
-    }
-
-    .job-experience {
-      width: 90%;
-    }
-
-    .job-experience h3 {
-      color: #3498db;
-      margin-bottom: 0.5vw;
-      /* changed to vw */
-    }
-
-    .certifications ul {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .certifications li {
-      margin-right: 1vw;
-      /* changed to vw */
-      margin-bottom: 1vw;
-      /* changed to vw */
-    }
-
-    .strengths ul {
-      columns: 2;
-      column-gap: 2.5vw;
-      /* changed to vw */
-    }
-
-    .declaration {
-      width: 100%;
-      background-color: #ecf0f1;
-      padding: 1.5vw;
-      /* changed to vw */
-      text-align: center;
-    }
-
-    /* Animation */
-    .fade-in {
-      animation: fadeIn 1s forwards;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(2vw);
-        /* changed to vw */
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Media Query for Mobile */
-    @media only screen and (max-width: 600px) {
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      header {
-        text-align: center;
-        padding: 2vw 0;
-        /* changed to vw */
-        background-color: #3498db;
-        color: #fff;
-        width: 100%;
-      }
-
-      header h1 {
-        margin: 0;
-        font-size: 2em;
-      }
-
-      .subtitle {
-        margin-top: 0.5vw;
-        /* changed to vw */
-        font-size: 1em;
-        color: #ecf0f1;
-      }
-
-      .contact-info {
-        margin-top: 1vw;
-        /* changed to vw */
-      }
-
-      .contact-info a {
-        color: #ecf0f1;
-        text-decoration: none;
-        margin-right: 0.5vw;
-        /* changed to vw */
-        display: block;
-      }
-
-      section {
-        width: 100%;
-        margin: 1vw auto;
-        /* changed to vw */
-        background-color: #fff;
-        box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
-        /* changed to vw */
-        padding: 1.5vw;
-        /* changed to vw */
-        opacity: 0;
-        transform: translateY(2vw);
-        /* changed to vw */
-        transition: opacity 0.5s, transform 0.5s;
-      }
-
-      h2 {
-        color: #3498db;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      li {
-        margin-bottom: 1vw;
-        /* changed to vw */
-      }
-
-      .job-experience {
-        width: 100%;
-      }
-
-      .job-experience h3 {
-        color: #3498db;
-        margin-bottom: 0.5vw;
-        /* changed to vw */
-      }
-
-      .certifications ul {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .certifications li {
-        margin-right: 0.5vw;
-        /* changed to vw */
-        margin-bottom: 1vw;
-        /* changed to vw */
-      }
-
-      .strengths ul {
-        columns: 1;
-      }
-
-      .declaration {
-        width: 100%;
-        background-color: #ecf0f1;
-        padding: 1vw;
-        /* changed to vw */
-        text-align: center;
-      }
-
-      /* Animation */
-      .fade-in {
-        animation: fadeIn 1s forwards;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(2vw);
-          /* changed to vw */
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
   <header>
     <h1>Satya Sreekar Pattaswami</h1>
-    <p class="subtitle">Full Stack Engineer | Student at KL University Hyderabad | AWS and Azure Certified Professional</p>
+    <p class="subtitle">Full Stack Engineer | Student at KL University Hyderabad | AWS, RedHat and Azure Certified Professional</p>
     <div class="contact-info">
       <a href="mailto:satyasreekar@hotmail.com">satyasreekar@hotmail.com</a>
       <a href="tel:+91-9652635479">+91-9652635479</a>
     </div>
   </header>
+  <section class="fade-in scroll">
+    <div id="scrolling-container">
+      <div id="image-container">
+        <img class="scrolling-image" src="./badges/1.png" alt="Image 1">
+        <img class="scrolling-image" src="./badges/2.png" alt="Image 2">
+        <img class="scrolling-image" src="./badges/3.png" alt="Image 3">
+        <img class="scrolling-image" src="./badges/4.png" alt="Image 4">
+        <img class="scrolling-image" src="./badges/5.png" alt="Image 5">
+        <img class="scrolling-image" src="./badges/6.png" alt="Image 6">
+        <img class="scrolling-image" src="./badges/7.png" alt="Image 7">
+      </div>
+    </div>
+  </section>
   <section class="fade-in">
     <center>
       <p>
-        <a href="https://github.com/Satya-Sreekar"><img src="https://iior.klh.edu.in/sreekar/github-mark.png" alt="Github" width=200 vh></a>
-        <a href="https://www.linkedin.com/in/satya-sreekar-pattaswami-093a2220a/"><img src="https://iior.klh.edu.in/sreekar/linkedin-logo.webp" alt="linkedin" width=215 vh></a>
+        <a href="https://github.com/Satya-Sreekar"><img src="./github-mark.png" alt="Github" width=200 vh></a>
+        <a href="https://www.linkedin.com/in/satya-sreekar-pattaswami-093a2220a/"><img src="./linkedin-logo.webp" alt="linkedin" width=215 vh></a>
       </p>
     </center>
   </section>
@@ -299,10 +52,12 @@
     </ul>
   </section>
   <section class="fade-in">
-    <h2>Training Programme Attended</h2>
+    <h2>Certifications</h2>
     <ul>
-      <li>Introduction to AI and ML using Python –Hands-on Workshop.</li>
-      <li>Agile Implementation Training.</li>
+      <li>Amazon-Certified Cloud Practitioner</li>
+      <li>Microsoft-Certified Azure Fundamentals</li>
+      <li>Red Hat Certified Enterprise Application Developer</li>
+      <li>IBM: Data Science Badge</li>
     </ul>
   </section>
   <section class="fade-in">
@@ -335,6 +90,8 @@
       <li>Led a 5-member team to develop a Web application with multi-tier user access.</li>
       <li>Deployed the server on multiple Servers.</li>
       <li>Worked with the client on multiple revisions.</li>
+      <li><a href="https://tilhantec.icar.gov.in/IMR/">Click Here to View OPDIRS Project</a></li>
+      <li><a href="https://tilhantec.icar.gov.in/Compendium/2015/Home.html">Click Here to View Compendia Project</a></li>
     </ul>
 
     <h3>Web Developer, AMITA - Pearlss4development (Jun 2022 – May 2023)</h3>
@@ -354,6 +111,7 @@
       <li>Maintained the website with up-to-date information.</li>
       <li>Created Several Webpages.</li>
       <li>Handled several time-sensitive tasks.</li>
+      <li><a href="https://klh.edu.in">Click Here to View website</a></li>
     </ul>
 
     <h3>Freelance, WebShogunsLee (May 2021 - Jun 2021)</h3>
@@ -366,13 +124,69 @@
     </ul>
 
   </section>
-  <section class="fade-in certifications">
-    <h2>Certifications</h2>
+  <section class="fade-in pricing">
     <ul>
-      <li>Azure Fundamentals</li>
-      <li>AWS Academy Cloud Foundations</li>
-      <li>AWS Academy Machine Learning Foundations</li>
-      <li>AWS Cloud Practitioner</li>
+      <li>
+        <table border="1">
+          <tr>
+            <td colspan="3" align="center">
+            <h2>Pricing</h2>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Service
+            </th>
+            <th>
+              Price
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Static Website WordPress
+              <br>(Upto 5 pages)
+            </td>
+            <td>
+              12,500 INR
+            </td>
+          </tr>
+          <tr>
+            <td>
+              WordPress Site page
+              <br>(additional pages)
+            </td>
+            <td>
+              500 INR (Each)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Static Website
+              <br>(From Scratch Upto 5 Pages)
+            </td>
+            <td>
+              15,000 INR
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Additional Webpages
+            </td>
+            <td>
+              1000 INR (Each)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Dynamic webapplications
+            </td>
+            <td>
+              Starting @ 25,000 INR
+              <br>price may vary based on complexity
+            </td>
+          </tr>
+        </table>
+      </li>
     </ul>
   </section>
 
