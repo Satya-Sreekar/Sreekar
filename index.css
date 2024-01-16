@@ -6,24 +6,57 @@ body {
     color: #333;
     display: flex;
     flex-wrap: wrap;
+    margin:2vh;
 }
 
 header {
+    display: grid;
     text-align: center;
+    align-items:baseline;
     padding: 4vw 0;
     background-color: #3498db;
     color: #fff;
-    width: 100%;
+    width: 100vw;
+    height: 55vh;
+    font-size: 1.5em;
+
 }
 
 header h1 {
+    
     margin: 0;
-    font-size: 3em;
+    animation: header 1s linear;
+}
+header h4
+{
+    animation: header2 1s linear;
+}
+@keyframes header {
+    from {
+        opacity: 0;
+        transform: translateX(-15vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes header2 {
+    from {
+        opacity: 0;
+        transform: translateX(20vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .subtitle {
     margin-top: 0.5vw;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     color: #ecf0f1;
 }
 
@@ -33,28 +66,30 @@ header h1 {
     justify-content: center;
     overflow: hidden;
     width: 100%;
-    margin: 0 auto; 
-  }
-  
-  #image-container {
+    margin: 0 auto;
+}
+
+#image-container {
     display: flex;
-    animation: scrollAnimation 24s linear infinite; 
-  }
-  
-  .scrolling-image {
+    animation: scrollAnimation 20s linear infinite;
+}
+
+.scrolling-image {
     height: 15vh;
     margin: 0 5vh;
-  }
-  
+}
 
-  @keyframes scrollAnimation {
-    0%{
-      transform: translateX(100%);
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(100%);
+
     }
     100% {
-      transform: translateX(-100%);
+
+        transform: translateX(-100%);
     }
-  }
+}
 
 .contact-info {
     margin-top: 2vw;
@@ -70,18 +105,20 @@ section {
     width: calc(50% - 7.5vw);
     margin: 1vw auto;
     background-color: #fff;
-    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
     padding: 2vw;
     opacity: 0;
     transform: translateY(2vw);
     transition: opacity 0.5s, transform 0.5s;
 }
-.scroll{
+
+.scroll {
     display: grid;
     width: 100%;
-
+    padding: 2vw 0 2vw 0;
 }
-h2 {
+
+.fade-in h2 {
     color: #3498db;
 }
 
@@ -103,15 +140,14 @@ li {
     margin-bottom: 0.5vw;
 }
 
-.pricing
-{
+.pricing {
     display: flex;
     width: 80%;
     align-items: center;
     justify-content: center;
 }
-.pricing table
-{
+
+.pricing table {
     text-align: center;
     size: x-large;
 }
