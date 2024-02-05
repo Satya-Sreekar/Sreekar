@@ -17,17 +17,16 @@ header {
     background-color: #3498db;
     color: #fff;
     width: 100vw;
-    height: 55vh;
-    font-size: 1.5em;
-
+    height: min-content;
+    font-size: 1.5vw;
 }
 
-header h1 {
+head h1 {
     
     margin: 0;
     animation: header 1s linear;
 }
-header h4
+head h4
 {
     animation: header2 1s linear;
 }
@@ -56,7 +55,6 @@ header h4
 
 .subtitle {
     margin-top: 0.5vw;
-    /* font-size: 1.2em; */
     color: #ecf0f1;
 }
 
@@ -117,6 +115,9 @@ section {
     width: 100%;
     padding: 2vw 0 2vw 0;
 }
+.TS img{
+    max-width: 100 px;
+}
 
 .fade-in h2 {
     color: #3498db;
@@ -132,7 +133,7 @@ li {
 }
 
 .job-experience {
-    width: 90%;
+    width: 90vw;
 }
 
 .job-experience h3 {
@@ -142,13 +143,13 @@ li {
 
 .pricing {
     display: flex;
-    width: 80%;
+    width: 90vw;
     align-items: center;
     justify-content: center;
 }
 
 .pricing table {
-    text-align: center;
+    text-align: start;
     size: x-large;
 }
 
