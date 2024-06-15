@@ -7,10 +7,11 @@
   <title>Satya Sreekar Pattaswami</title>
   <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <header class="text-center p-3">
     <div>
       <h4>When you need a Jack Of all Trades....</h4>
       <h1>Satya Sreekar Pattaswami</h1>
@@ -21,188 +22,234 @@
       </div>
     </div>
   </header>
+
+  <!-- Scrolling badges section -->
   <section class="fade-in scroll">
-    <div id="scrolling-container">
-      <div id="image-container">
-        <img class="scrolling-image" src="./badges/1.png" alt="Image 1">
-        <img class="scrolling-image" src="./badges/2.png" alt="Image 2">
-        <img class="scrolling-image" src="./badges/9.png" alt="Image 9">
-        <img class="scrolling-image" src="./badges/3.png" alt="Image 3">
-        <img class="scrolling-image" src="./badges/4.png" alt="Image 4">
-        <img class="scrolling-image" src="./badges/5.png" alt="Image 5">
-        <img class="scrolling-image" src="./badges/6.png" alt="Image 6">
-        <img class="scrolling-image" src="./badges/7.png" alt="Image 7">
-        <img class="scrolling-image" src="./badges/8.png" alt="Image 8">
+    <div id="scrolling-container" class="d-flex justify-content-center overflow-hidden">
+      <div id="image-container" class="d-flex">
+        <img class="scrolling-image m-2" src="./badges/1.png" alt="Image 1">
+        <img class="scrolling-image m-2" src="./badges/2.png" alt="Image 2">
+        <img class="scrolling-image m-2" src="./badges/9.png" alt="Image 9">
+        <img class="scrolling-image m-2" src="./badges/3.png" alt="Image 3">
+        <img class="scrolling-image m-2" src="./badges/4.png" alt="Image 4">
+        <img class="scrolling-image m-2" src="./badges/5.png" alt="Image 5">
+        <img class="scrolling-image m-2" src="./badges/6.png" alt="Image 6">
+        <img class="scrolling-image m-2" src="./badges/7.png" alt="Image 7">
+        <img class="scrolling-image m-2" src="./badges/8.png" alt="Image 8">
       </div>
     </div>
   </section>
-  <section class="fade-in social">
-    <center>
-      <p>
-        <a href="https://github.com/Satya-Sreekar"><img src="./github-mark.png" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/satya-sreekar-pattaswami-093a2220a/"><img src="./linkedin-logo.webp"
-            alt="linkedin"></a>
-      </p>
-    </center>
+
+  <!-- Speedometer section -->
+  <section class="fade-in scroll text-center py-5">
+    <div class="row justify-content-center">
+      <div class="col-sm-2 speedometer">
+        <div class="number" id="research-papers" data-target="1">0</div>
+        <div class="text">Research Papers</div>
+      </div>
+      <div class="col-sm-2 speedometer">
+        <div class="number" id="projects" data-target="5">0</div>
+        <div class="text">Projects</div>
+      </div>
+      <div class="col-sm-2 speedometer">
+        <div class="number" id="internships" data-target="5">0</div>
+        <div class="text">Internships</div>
+      </div>
+      <div class="col-sm-2 speedometer">
+        <div class="number" id="certificates" data-target="21">0</div>
+        <div class="text">Certificates</div>
+      </div>
+      <div class="col-sm-2 speedometer">
+        <div class="number" id="badges" data-target="9">0</div>
+        <div class="text">Badges</div>
+      </div>
+    </div>
   </section>
 
-  <section class="fade-in">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Programming languages – Python, Java, C, JavaScript, PHP, HTML, CSS.</li>
-      <li>Virtualization – VMWare</li>
-      <li>Development Tools- VS Code, GitHub, PyCharm, XAMPP, ChatGPT</li>
-      <li>Frameworks – React.js ,Node.js, React Native</li>
-      <li>Cloud Technologies – Azure, AWS</li>
-      <li>Databases – MySQL</li>
-      <li>Operating Systems – Linux, Windows, Raspbian & MacOS.</li>
-    </ul>
+  <!-- Contact info section -->
+  <section class="fade-in text-center py-3 contact-info">
+    <p>
+      <a href="https://github.com/Satya-Sreekar"><img src="./github-mark.png" alt="Github" class="mx-2"></a>
+      <a href="https://www.linkedin.com/in/satya-sreekar-pattaswami-093a2220a/"><img src="./linkedin-logo.webp"
+          alt="LinkedIn" class="mx-2"></a>
+    </p>
   </section>
-  <section class="fade-in">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Amazon-Certified Cloud Practitioner</li>
-      <li>Microsoft-Certified Azure Fundamentals</li>
-      <li>Red Hat Certified Enterprise Application Developer</li>
-      <li>IBM: Data Science Badge</li>
-    </ul>
+
+  <!-- Grouped section for Technical Skills, Certifications, and Strengths -->
+  <section class="fade-in py-5 content-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Technical Skills</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Programming languages – Python, Java, C, JavaScript, PHP, HTML, CSS.</li>
+            <li class="list-group-item">Virtualization – VMWare</li>
+            <li class="list-group-item">Development Tools- VS Code, GitHub, PyCharm, XAMPP, ChatGPT</li>
+            <li class="list-group-item">Frameworks – React.js, Node.js, React Native</li>
+            <li class="list-group-item">Cloud Technologies – Azure, AWS</li>
+            <li class="list-group-item">Databases – MySQL</li>
+            <li class="list-group-item">Operating Systems – Linux, Windows, Raspbian & MacOS.</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Certifications</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Amazon-Certified Cloud Practitioner</li>
+            <li class="list-group-item">Microsoft-Certified Azure Fundamentals</li>
+            <li class="list-group-item">Red Hat Certified Enterprise Application Developer</li>
+            <li class="list-group-item">IBM: Data Science Badge</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Strengths</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Effective communication skills, both oral and written & Good interpersonal
+              skills.</li>
+            <li class="list-group-item">High energy level.</li>
+            <li class="list-group-item">Commendable technical skills.</li>
+            <li class="list-group-item">Strong goal and results-oriented with proven success in setting and meeting
+              objectives.</li>
+            <li class="list-group-item">Proven ability to design solutions and manage projects without supervision.</li>
+            <li class="list-group-item">Service delivery and customer-focused with strong analytical & problem-solving
+              Skills.</li>
+            <li class="list-group-item">Accustomed to working in a variety of team structures.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="fade-in">
-    <h2>Strengths</h2>
-    <ul>
-      <li>Effective communication skills, both oral and written & Good interpersonal skills.</li>
-      <li>High energy level.</li>
-      <li>Commendable technical skills.</li>
-      <li>Strong goal and results-oriented with proven success in setting and meeting objectives.</li>
-      <li>Proven ability to design solutions and manage projects without supervision.</li>
-      <li>Service delivery and customer-focused with strong analytical & problem-solving Skills.</li>
-      <li>Accustomed to working in a variety of team structures.</li>
-    </ul>
+
+  <!-- Work Experience section -->
+  <section class="fade-in py-5">
+    <div class="container">
+      <h2>Work Experience</h2>
+
+      <h3>Developer, Neon Flake (July 2023-October 2023)</h3>
+      <p>Neon Flake, Hyderabad, India – Developer</p>
+      <ul>
+        <li>Integrate multiple Machine Learning models and deploy them.</li>
+        <li>Configure and build a server to host the integrated application.</li>
+        <li>Handle Weekly Client Meetings.</li>
+        <li>Research.</li>
+      </ul>
+
+      <h3>Intern, ICAR- Indian Council of Agricultural Research (Sep 2022 - Present)</h3>
+      <p>Indian Council of Agriculture Research-Indian Institute of Oilseeds Research, Hyderabad, India– Intern</p>
+      <ul>
+        <li>Led a 5-member team to develop a Web application with multi-tier user access.</li>
+        <li>Deployed the server on multiple Servers.</li>
+        <li>Worked with the client on multiple revisions.</li>
+        <li><a href="https://tilhantec.icar.gov.in/IMR/">Click Here to View OPDIRS Project</a></li>
+        <li><a href="https://tilhantec.icar.gov.in/Compendium/2015/Home.html">Click Here to View Compendia Project</a>
+        </li>
+      </ul>
+
+      <h3>Web Developer, AMITA - Pearlss4development (Jun 2022 – May 2023)</h3>
+      <p>AMITA - Pearlss4development, Hyderabad, India – Web Developer</p>
+      <ul>
+        <li>Integrated WhatsApp with both websites to enhance communication and engagement with users.</li>
+        <li>Developed a happiness assessment tool to help users track and improve their well-being.</li>
+        <li>Made changes to the websites to improve user experience and functionality.</li>
+        <li>Created and provided free resources for users to promote health and wellness.</li>
+        <li>Updated the terms and conditions for the websites to ensure compliance with legal requirements.</li>
+        <li>Conducted SEO optimization to improve website visibility and traffic.</li>
+      </ul>
+
+      <h3>Website Admin, KL University Hyderabad (Jul 2022 - Jul 2023)</h3>
+      <p>KL University Hyderabad, Hyderabad, India– Website Admin</p>
+      <ul>
+        <li>Head Admin for KLUH-Website</li>
+        <li>Ensuring the smooth operation of the website</li>
+        <li>Assisting with Project Details and Allotment for the CSIT Department</li>
+      </ul>
+    </div>
   </section>
-  <section class="fade-in job-experience">
-    <h2>Work Experience</h2>
 
-    <h3>Developer, Neon Flake (July 2023-October 2023)</h3>
-    <p>Neon Flake, Hyderabad, India – Developer</p>
-    <ul>
-      <li>Integrate multiple Machine Learning models and deploy them.</li>
-      <li>Configure and build a server to host the integrated application.</li>
-      <li>Handle Weekly Client Meetings.</li>
-      <li>Research.</li>
-    </ul>
-
-    <h3>Intern, ICAR- Indian Council of Agricultural Research (Sep 2022 - Present)</h3>
-    <p>Indian Council of Agriculture Research-Indian Institute of Oilseeds Research, Hyderabad, India– Intern</p>
-    <ul>
-      <li>Led a 5-member team to develop a Web application with multi-tier user access.</li>
-      <li>Deployed the server on multiple Servers.</li>
-      <li>Worked with the client on multiple revisions.</li>
-      <li><a href="https://tilhantec.icar.gov.in/IMR/">Click Here to View OPDIRS Project</a></li>
-      <li><a href="https://tilhantec.icar.gov.in/Compendium/2015/Home.html">Click Here to View Compendia Project</a>
-      </li>
-    </ul>
-
-    <h3>Web Developer, AMITA - Pearlss4development (Jun 2022 – May 2023)</h3>
-    <p>AMITA - Pearlss4development, Hyderabad, India – Web Developer</p>
-    <ul>
-      <li>Integrated WhatsApp with both websites to enhance communication and engagement with users.</li>
-      <li>Developed a happiness assessment tool to help users track and improve their well-being.</li>
-      <li>Made changes to the websites to improve user experience and functionality.</li>
-      <li>Created and provided free resources for users to promote health and wellness.</li>
-      <li>Updated the terms and conditions for the websites to ensure compliance with legal requirements.</li>
-      <li>Conducted SEO optimization to improve website visibility and traffic.</li>
-    </ul>
-
-    <h3>Website Admin, KL University Hyderabad (Jul 2022 - Jul 2023)</h3>
-    <p>KL University Hyderabad, India– Website Admin</p>
-    <ul>
-      <li>Maintained the website with up-to-date information.</li>
-      <li>Created Several Webpages.</li>
-      <li>Handled several time-sensitive tasks.</li>
-      <li><a href="https://klh.edu.in">Click Here to View website</a></li>
-    </ul>
-
-    <h3>Freelance, WebShogunsLee (May 2021 - Jun 2021)</h3>
-    <p>Freelancing for WebShogunsLee, Singapore – Python Developer</p>
-    <ul>
-      <li>Developed a Python Script that automatically fetches data from LTA Singapore's API every minute.</li>
-      <li>Fetched JSON data then stored it into a CSV File.</li>
-      <li>Made the code time-efficient by splitting it into different files.</li>
-      <li>Made several changes to the code based on client requirements.</li>
-    </ul>
-
+  <!-- Research Work section -->
+  <section class="fade-in py-5">
+    <div class="container">
+      <h2>Research</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Automated Speech Analysis for Early Identification and Prediction of Depression: A
+                Comprehensive Study</h5>
+              <p class="card-text">Depression is a common mental health disease that requires early identification for
+                successful treatment. Through voice analysis, this study aims to create an automated framework using
+                convolutional neural networks (CNN) for the early detection and prediction of depression. The study
+                looks at different types of depression, causes of sadness, ways to prevent it, and the ability of
+                automated speech analysis to identify depressive symptoms. A thorough examination of the optimised
+                multi-channel weighted speech classification (OMCWSC) system is also provided, emphasising its efficacy
+                in foretelling adolescent depression. The results highlight the importance of acoustic speech
+                characteristics and the promising potential of deep learning methods in depression analysis.</p>
+              <a href="https://www.routledge.com/Advances-in-Computational-Intelligence-and-Its-Applications/Ahmad-Siddiqui-Debnath-Das-Mohanty-Hazra/p/book/9781032786124"
+                class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Research Paper 2</h5>
+              <p class="card-text">Abstract of the research paper...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- Add more cards for additional research papers -->
+      </div>
+    </div>
+    </div>
   </section>
-  <section class="fade-in pricing">
-    <ul>
-      <li>
-        <table>
-          <tr>
-            <td colspan="3" align="center">
-              <h2>Pricing</h2>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Service
-            </th>
-            <td>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </td>
-            <th>
-              Price
-            </th>
-          </tr>
-          <tr>
-            <td>
-              Static Website WordPress
-              <br>(Upto 5 pages)
-            </td>
-            <td>:</td>
-            <td>
-              12,500 INR
-            </td>
-          </tr>
-          <tr>
-            <td>
-              WordPress Site page
-              <br>(additional pages)
-            </td>
-            <td>:</td>
-            <td>
-              500 INR (Each)
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Static Website
-              <br>(From Scratch Upto 5 Pages)
-            </td>
-            <td>:</td>
-            <td>
-              15,000 INR
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Additional Webpages
-            </td>
-            <td>:</td>
-            <td>
-              1000 INR (Each)
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Dynamic webapplications
-            </td>
-            <td>:</td>
-            <td>
-              Starting @ 25,000 INR
-              <br>price may vary based on complexity
-            </td>
-          </tr>
-        </table>
-      </li>
-    </ul>
-  </section>
+
+  <!-- Script for speedometer animation and infinite scrolling -->
+  <script>
+    function animateSpeedometer(element, target) {
+      let counter = 0;
+      let step = target / 50;  // Adjust this value to control the speed of the sweep
+
+      function updateCounter() {
+        if (counter < target) {
+          counter += step;
+          element.textContent = Math.floor(counter);
+          requestAnimationFrame(updateCounter);
+        } else {
+          element.textContent = target;  // Ensure the final number is the target
+        }
+      }
+
+      updateCounter();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const speedometers = document.querySelectorAll('.speedometer .number');
+      speedometers.forEach(el => {
+        const target = parseInt(el.getAttribute('data-target'));
+        animateSpeedometer(el, target);
+      });
+
+      // Infinite scrolling for badges
+      const container = document.getElementById('scrolling-container');
+      const imageContainer = document.getElementById('image-container');
+      const images = Array.from(imageContainer.children);
+
+      let scrollSpeed = 2; // Adjust this value to control scroll speed
+      let containerWidth = container.offsetWidth;
+      let totalWidth = imageContainer.scrollWidth;
+
+      function scrollImages() {
+        if (imageContainer.scrollLeft >= totalWidth / 2) {
+          imageContainer.scrollLeft = 0;
+        } else {
+          imageContainer.scrollLeft += scrollSpeed;
+        }
+        requestAnimationFrame(scrollImages);
+      }
+
+      scrollImages();
+    });
+  </script>
 </body>
 
 </html>
