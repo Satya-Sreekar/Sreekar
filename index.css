@@ -13,7 +13,6 @@ body {
   flex-wrap: wrap;
   margin: 2vh;
 }
-
 header {
   display: grid;
   text-align: center;
@@ -298,4 +297,5 @@ li {
 
 .list-group-item {
   background-color: #f8f9fa;
-  border: 
+  /* border:  */
+}

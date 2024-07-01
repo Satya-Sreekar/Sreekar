@@ -7,9 +7,32 @@
   <title>Satya Sreekar Pattaswami</title>
   <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="nav.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Satya Sreekar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/certificates.html">Certificates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </head>
-
 <body>
   <header class="text-center p-3">
     <div>
@@ -49,7 +72,7 @@
         <div class="text">Research Papers</div>
       </div>
       <div class="col-sm-2 speedometer">
-        <div class="number" id="projects" data-target="5">0</div>
+        <div class="number" id="projects" data-target="10">0</div>
         <div class="text">Projects</div>
       </div>
       <div class="col-sm-2 speedometer">
@@ -75,51 +98,6 @@
           alt="LinkedIn" class="mx-2"></a>
     </p>
   </section>
-
-  <!-- Grouped section for Technical Skills, Certifications, and Strengths -->
-  <section class="fade-in py-5 content-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Technical Skills</h2>
-          <ul class="list-group">
-            <li class="list-group-item">Programming languages – Python, Java, C, JavaScript, PHP, HTML, CSS.</li>
-            <li class="list-group-item">Virtualization – VMWare</li>
-            <li class="list-group-item">Development Tools- VS Code, GitHub, PyCharm, XAMPP, ChatGPT</li>
-            <li class="list-group-item">Frameworks – React.js, Node.js, React Native</li>
-            <li class="list-group-item">Cloud Technologies – Azure, AWS</li>
-            <li class="list-group-item">Databases – MySQL</li>
-            <li class="list-group-item">Operating Systems – Linux, Windows, Raspbian & MacOS.</li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <h2>Certifications</h2>
-          <ul class="list-group">
-            <li class="list-group-item">Amazon-Certified Cloud Practitioner</li>
-            <li class="list-group-item">Microsoft-Certified Azure Fundamentals</li>
-            <li class="list-group-item">Red Hat Certified Enterprise Application Developer</li>
-            <li class="list-group-item">IBM: Data Science Badge</li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <h2>Strengths</h2>
-          <ul class="list-group">
-            <li class="list-group-item">Effective communication skills, both oral and written & Good interpersonal
-              skills.</li>
-            <li class="list-group-item">High energy level.</li>
-            <li class="list-group-item">Commendable technical skills.</li>
-            <li class="list-group-item">Strong goal and results-oriented with proven success in setting and meeting
-              objectives.</li>
-            <li class="list-group-item">Proven ability to design solutions and manage projects without supervision.</li>
-            <li class="list-group-item">Service delivery and customer-focused with strong analytical & problem-solving
-              Skills.</li>
-            <li class="list-group-item">Accustomed to working in a variety of team structures.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Work Experience section -->
   <section class="fade-in py-5">
     <div class="container">
@@ -152,7 +130,7 @@
               <a href="https://tilhantec.icar.gov.in/Compendium/2015/Home.html">Oilseeds Statistics Compendia</a>
             </td>
             <td>
-              <a href="https://tilhantec.icar.gov.in/Compendium/2015/Home.html">Deep Learning Classifier</a>
+              <a href="#">Deep Learning Classifier (In progress)</a>
             </td>
           </tr>
         </table>
@@ -236,8 +214,57 @@
     </div>
     </div>
   </section>
+  
+  <!-- Grouped section for Technical Skills, Certifications, and Strengths -->
+  <section class="fade-in py-5 content-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Technical Skills</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Programming languages – Python, Java, C, JavaScript, PHP, HTML, CSS.</li>
+            <li class="list-group-item">Virtualization – VMWare</li>
+            <li class="list-group-item">Development Tools- VS Code, GitHub, PyCharm, XAMPP, ChatGPT</li>
+            <li class="list-group-item">Frameworks – React.js, Node.js, React Native</li>
+            <li class="list-group-item">Cloud Technologies – Azure, AWS</li>
+            <li class="list-group-item">Databases – MySQL</li>
+            <li class="list-group-item">Operating Systems – Linux, Windows, Raspbian & MacOS.</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Certifications</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Amazon-Certified Cloud Practitioner</li>
+            <li class="list-group-item">Microsoft-Certified Azure Fundamentals</li>
+            <li class="list-group-item">Red Hat Certified Enterprise Application Developer</li>
+            <li class="list-group-item">IBM: Data Science Badge</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Strengths</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Effective communication skills, both oral and written & Good interpersonal
+              skills.</li>
+            <li class="list-group-item">High energy level.</li>
+            <li class="list-group-item">Commendable technical skills.</li>
+            <li class="list-group-item">Strong goal and results-oriented with proven success in setting and meeting
+              objectives.</li>
+            <li class="list-group-item">Proven ability to design solutions and manage projects without supervision.</li>
+            <li class="list-group-item">Service delivery and customer-focused with strong analytical & problem-solving
+              Skills.</li>
+            <li class="list-group-item">Accustomed to working in a variety of team structures.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Script for speedometer animation and infinite scrolling -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <script>
     function animateSpeedometer(element, target) {
       let counter = 0;
