@@ -5,43 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satya Sreekar Pattaswami</title>
+  <meta name="description"
+    content="Satya Sreekar Pattaswami - Full Stack Engineer and Student at KL University Hyderabad.">
+  <meta name="keywords"
+    content="Satya Sreekar Pattaswami,Satya,Satya Sreekar, Freelancer, Full Stack Engineer, KL University, AWS Certified, Azure Certified">
+  <meta name="author" content="Satya Sreekar Pattaswami">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="nav.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Satya Sreekar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/certificates.html">Certificates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Satya Sreekar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/certificates.html">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:satyasreekarpattaswami@gmail.com">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </head>
+
 <body>
   <header class="text-center p-3">
     <div>
       <h4>When you need a Jack Of all Trades....</h4>
       <h1>Satya Sreekar Pattaswami</h1>
-      <h6 class="subtitle">Full Stack Engineer | Student at KL University Hyderabad | AWS, RedHat and Azure Certified
-        Professional</h6>
+      <h6 class="subtitle">AI Consultant | Full Stack Engineer | Cloud Practitioner | Research Enthusiast</h6>
       <div class="contact-info">
-        <a href="mailto:satyasreekar@hotmail.com">satyasreekar@hotmail.com</a>
+        <a class="nav-link" href="mailto:satyasreekar@hotmail.com">Contact</a>
       </div>
     </div>
   </header>
@@ -50,16 +68,28 @@
   <section class="fade-in scroll">
     <div id="scrolling-container" class="d-flex justify-content-center overflow-hidden">
       <div id="image-container" class="d-flex">
-        <img class="scrolling-image m-2" src="./badges/1.png" alt="Image 1">
-        <img class="scrolling-image m-2" src="./badges/2.png" alt="Image 2">
-        <img class="scrolling-image m-2" src="./badges/9.png" alt="Image 9">
-        <img class="scrolling-image m-2" src="./badges/3.png" alt="Image 3">
-        <img class="scrolling-image m-2" src="./badges/4.png" alt="Image 4">
-        <img class="scrolling-image m-2" src="./badges/5.png" alt="Image 5">
-        <img class="scrolling-image m-2" src="./badges/6.png" alt="Image 6">
-        <img class="scrolling-image m-2" src="./badges/8.png" alt="Image 8">
-        <img class="scrolling-image m-2" src="./badges/10.png" alt="Image 10">
-        <img class="scrolling-image m-2" src="./badges/7.png" alt="Image 7">
+        <!-- First set of images -->
+        <img class="scrolling-image" src="./badges/1.png" alt="Image 1">
+        <img class="scrolling-image" src="./badges/2.png" alt="Image 2">
+        <img class="scrolling-image" src="./badges/9.png" alt="Image 9">
+        <img class="scrolling-image" src="./badges/3.png" alt="Image 3">
+        <img class="scrolling-image" src="./badges/4.png" alt="Image 4">
+        <img class="scrolling-image" src="./badges/5.png" alt="Image 5">
+        <img class="scrolling-image" src="./badges/6.png" alt="Image 6">
+        <img class="scrolling-image" src="./badges/8.png" alt="Image 8">
+        <img class="scrolling-image" src="./badges/10.png" alt="Image 10">
+        <img class="scrolling-image" src="./badges/7.png" alt="Image 7">
+        <!-- Duplicate set of images for seamless scrolling -->
+        <img class="scrolling-image" src="./badges/1.png" alt="Image 1">
+        <img class="scrolling-image" src="./badges/2.png" alt="Image 2">
+        <img class="scrolling-image" src="./badges/9.png" alt="Image 9">
+        <img class="scrolling-image" src="./badges/3.png" alt="Image 3">
+        <img class="scrolling-image" src="./badges/4.png" alt="Image 4">
+        <img class="scrolling-image" src="./badges/5.png" alt="Image 5">
+        <img class="scrolling-image" src="./badges/6.png" alt="Image 6">
+        <img class="scrolling-image" src="./badges/8.png" alt="Image 8">
+        <img class="scrolling-image" src="./badges/10.png" alt="Image 10">
+        <img class="scrolling-image" src="./badges/7.png" alt="Image 7">
       </div>
     </div>
   </section>
@@ -68,7 +98,7 @@
   <section class="fade-in scroll text-center py-5">
     <div class="row justify-content-center">
       <div class="col-sm-2 speedometer">
-        <div class="number" id="research-papers" data-target="1">0</div>
+        <div class="number" id="research-papers" data-target="2">0</div>
         <div class="text">Research Papers</div>
       </div>
       <div class="col-sm-2 speedometer">
@@ -99,95 +129,181 @@
     </p>
   </section>
   <!-- Work Experience section -->
-  <section class="fade-in py-5">
+  <section class="fade-in py-5 work-experience">
     <div class="container">
       <h2>Work Experience</h2>
 
-      
-      <h3>Intern, ICAR- Indian Council of Agricultural Research (Sep 2022 - Present)</h3>
-      <p>Indian Council of Agriculture Research-Indian Institute of Oilseeds Research, Hyderabad, India– Intern Web Application Development</p>
-      <ul>
-        <li>Led a 5-member team to develop a Web application with multi-tier user access.</li>
-        <li>Deployed the server on multiple Servers.</li>
-        <li>Worked with the client on multiple revisions.</li>
-        <table border="1" align="center" style="table-layout: fixed; width: 100%;">
-          <tr>
-            <th>
-              Project 1
-            </th>
-            <th>
-              Project 2
-            </th>
-            <th>
-              Project 3
-            </th>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://tilhantec.icar.gov.in/IMR/">Oilseeds Pests and Diseases Image Repository System</a>
-            </td>
-            <td>
-              <a href="https://tilhantec.icar.gov.in/Compendium/2015/Home.html">Oilseeds Statistics Compendia</a>
-            </td>
-            <td>
-              <a href="#">Deep Learning Classifier (In progress)</a>
-            </td>
-          </tr>
-        </table>
-      </li>
-    </ul>
-    
-    <h3>Developer, Neon Flake (July 2023-October 2023)</h3>
-    <p>Neon Flake, Hyderabad, India – Developer</p>
-    <ul>
-      <li>Integrate multiple Machine Learning models and deploy them.</li>
-      <li>Configure and build a server to host the integrated application.</li>
-      <li>Handle Weekly Client Meetings.</li>
-      <li>Research.</li>
-    </ul>
-    
-    <h3>Web Developer, AMITA - Pearlss4development (Jun 2022 – May 2023)</h3>
-      <p>AMITA - Pearlss4development, Hyderabad, India – Web Developer</p>
-      <ul>
-        <li>Integrated WhatsApp with both websites to enhance communication and engagement with users.</li>
-        <li>Developed a happiness assessment tool to help users track and improve their well-being.</li>
-        <li>Made changes to the websites to improve user experience and functionality.</li>
-        <li>Created and provided free resources for users to promote health and wellness.</li>
-        <li>Updated the terms and conditions for the websites to ensure compliance with legal requirements.</li>
-        <li>Conducted SEO optimization to improve website visibility and traffic.</li>
-      </ul>
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>AI Consultant, Tata Medical and Diagnostics</h3>
+            <p>December 2024 – May 2025 | Bangalore, India</p>
+          </div>
+          <img src="logos/tatamdlogo.svg" alt="Tata Medical Logo" class="company-logo">
+        </div>
+        <ul>
+          <li>Spearheaded development of DiNC Bot, an assistant leveraging LLMs for Appointment booking,
+            Pre-Consultation questioner, and general queries.</li>
+          <li>Designed and prototyped multiple AI-driven workflows, including progress note summarization, knowledge
+            retrieval (RAG), and treatment plan automation.</li>
+          <li>Contributed to the LLM integration architecture, evaluating OpenAI API vs. on-prem solutions (e.g., LLaMA
+            with Ollama), with cost-performance tradeoff analysis.</li>
+          <li>Collaborated cross-functionally with teams to ensure secure, scalable AI deployment aligned with
+            healthcare data privacy norms.</li>
+        </ul>
+      </div>
 
-      <h3>Website Admin, KL University Hyderabad (Jul 2022 - Jul 2023)</h3>
-      <p>KL University Hyderabad, Hyderabad, India– Website Admin</p>
-      <ul>
-        <li>Maintained the website with up-to-date information.</li>
-        <li>Ensuring the smooth operation of the website</li>
-        <li>Created Several Webpages</li>
-        <li>Handled several time-sensitive tasks</li>
-      </ul>
-      
-      <h3>Freelancing (May 2021 - Jun 2021)</h3>
-      <p>Web ShogundLee, Singapore– Data Streaming</p>
-      <ul>
-        <li>Developed a python Script which automatically fetches data from LTA Singapore’s API Every minute</li>
-        <li>Fetched JSON data then stored into a CSV File</li>
-        <li>Made the code time efficient by splitting it into different files</li>
-        <li>Made several changes to the code based on client requirements</li>
-      </ul>
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Director-Co-Founder, ThinkOMega IT Solutions</h3>
+            <p>August 2024 – Present | Hyderabad, India</p>
+          </div>
+          <img src="logos/ThinkOMegaLogo.png" alt="ThinkOMega Logo" class="company-logo">
+        </div>
+        <ul>
+          <li>Continuously researching and adopting cutting-edge AI trends to keep ThinkOMega's offerings at the
+            forefront of technology.</li>
+          <li>Designing scalable, secure, and user-centric applications tailored to meet diverse industry needs and
+            challenges.</li>
+          <li>Developing AI-driven solutions that seamlessly integrate into existing workflows, enhancing productivity
+            and user experience.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Head of Product Development, True Codeology Solutions</h3>
+            <p>September 2024 - Present | Hyderabad, India</p>
+          </div>
+          <img src="logos/TrueCodelogyLogo.jpeg" alt="True Codeology Logo" class="company-logo">
+        </div>
+        <ul>
+          <li>Collaborated with founders and senior leadership to define AI product vision and strategic roadmap.</li>
+          <li>Designed end-to-end LLM-based solutions aligned with client needs and business goals.</li>
+          <li>Led model integration, customization, and deployment across multiple use cases.</li>
+          <li>Drove prompt engineering and performance tuning to maximize impact.</li>
+          <li>Oversaw cross-functional execution from ideation to delivery.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>AI Engineer/Researcher, ICAR-IIOR</h3>
+            <p>January 2024 - Present | Hyderabad, India</p>
+          </div>
+          <div class="company-logos">
+            <img src="logos/iior-logo.jpg" alt="ICAR-IIOR Logo" class="company-logo">
+            <img src="logos/icar.png" alt="ICAR-IIOR Logo" class="company-logo">
+          </div>
+        </div>
+        <ul>
+          <li>Developing Models to detect specific diseases in specific plants.</li>
+          <li>Collaborating with agricultural scientists to fine-tune models for practical field deployment, ensuring
+            robust performance in diverse environmental conditions.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Web Application Developer, ICAR-IIOR</h3>
+            <p>March 2023 - January 2024 | Hyderabad, India</p>
+          </div>
+          <div class="company-logos">
+            <img src="logos/iior-logo.jpg" alt="ICAR-IIOR Logo" class="company-logo">
+            <img src="logos/icar.png" alt="ICAR-IIOR Logo" class="company-logo">
+          </div>
+        </div>
+        <ul>
+          <li>Led a 5-member team to develop a Web application with multi-tier user access.</li>
+          <li>Worked in an agile manner to handle evolving client requirements.</li>
+          <li>Developed the backend of the web application using PHP and HTML.</li>
+          <li>Project: <a href="https://tilhantec.icar.gov.in/IMR">Oilseeds Pests and Diseases Image Repository
+              System</a></li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>AI Engineer/Researcher, Neon Flake</h3>
+            <p>July 2023 - October 2023 | Hyderabad, India</p>
+          </div>
+          <img src="logos/neonflakelogo.png" alt="Neon Flake Logo" class="company-logo">
+        </div>
+        <ul>
+          <li>Integrated and deployed multiple Machine Learning models.</li>
+          <li>Configured and built a server to host the integrated application.</li>
+          <li>Implemented Research Paper findings into practical solutions.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Web Developer, AMITA - Pearlss4development</h3>
+            <p>June 2022 – May 2023 | Hyderabad, India</p>
+          </div>
+          <img src="logos/AmitaLogo.png" alt="AMITA Logo" class="company-logo">
+        </div>
+        <ul>
+          <li>Made changes to the websites to improve user experience and functionality.</li>
+          <li>Integrated WhatsApp with both websites to enhance communication and engagement with users.</li>
+          <li>Developed a happiness assessment tool to help users track and improve their well-being.</li>
+          <li>Created a video catalogue for users to promote health and wellness.</li>
+          <li>Conducted SEO optimization to improve website visibility.</li>
+          <li>Projects: <a href="https://www.amitacare.com">AMITA Care</a>, <a
+              href="https://pearlss4development.org">Pearlss4development</a></li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Website Admin, KL University Hyderabad</h3>
+            <p>July 2022 - July 2023 | Hyderabad, India</p>
+          </div>
+          <img src="logos/KLH_Logo.png" alt="KL University Logo" class="company-logo">
+        </div>
+        <ul>
+          <li>Maintained the website with up-to-date information.</li>
+          <li>Created Several Webpages.</li>
+          <li>Handled several time-sensitive tasks.</li>
+          <li>Website: <a href="https://klh.edu.in">KL University Hyderabad</a></li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Python Developer, WebShogunsLee</h3>
+            <p>May 2021 - June 2021 | Singapore</p>
+          </div>
+        </div>
+        <ul>
+          <li>Developed a python Script which automatically fetches data from LTA Singapore's API Every minute.</li>
+          <li>Fetched JSON data then stored into a CSV File.</li>
+          <li>Made the code time efficient by splitting it into different files.</li>
+          <li>Made several changes to the code based on client requirements.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Research Work section -->
   <section class="fade-in py-5">
     <div class="container">
-      <h2>Research</h2>
+      <h2 class="mb-4">Research</h2>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Automated Speech Analysis for Early Identification and Prediction of Depression: A
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-3">Automated Speech Analysis for Early Identification and Prediction of Depression: A
                 Comprehensive Study</h5>
-              <p class="card-text">Depression is a common mental health disease that requires early identification for
+              <p class="card-text flex-grow-1">Depression is a common mental health disease that requires early identification for
                 successful treatment. Through voice analysis, this study aims to create an automated framework using
                 convolutional neural networks (CNN) for the early detection and prediction of depression. The study
                 looks at different types of depression, causes of sadness, ways to prevent it, and the ability of
@@ -195,26 +311,40 @@
                 multi-channel weighted speech classification (OMCWSC) system is also provided, emphasising its efficacy
                 in foretelling adolescent depression. The results highlight the importance of acoustic speech
                 characteristics and the promising potential of deep learning methods in depression analysis.</p>
-              <a href="https://www.routledge.com/Advances-in-Computational-Intelligence-and-Its-Applications/Ahmad-Siddiqui-Debnath-Das-Mohanty-Hazra/p/book/9781032786124"
-                class="btn btn-primary">Read More</a>
+              <div class="mt-3">
+                <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003488682-11/automated-speech-analysis-early-identification-prediction-depression-comprehensive-study-satya-sreekar-pattaswami"
+                  class="btn btn-primary">Read More</a>
+              </div>
             </div>
           </div>
         </div>
-        <!-- <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Research Paper 2</h5>
-              <p class="card-text">Abstract of the research paper...</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-3">Detection of Sesame Phyllody Disease using Image Analysis and Deep Learning: A
+                Transfer Learning Model Approach with MobileNetV2</h5>
+              <p class="card-text flex-grow-1">Sesame is a major oilseed crop in India. Among the major yield limiting factors,
+                biotic stress plays the major role in yield reduction which leads to decrease in cultivable areas. Sesame
+                phyllody disease is a very serious disease in most sesame growing regions and causes up to
+                100% yield loss and thus its management gained national importance. Phyllody caused by
+                phytoplasmas where the entire inflorescence is replaced by a growth consisting of short,
+                twisted leaves closely arranged on a stem with very short internodes and affected plants
+                remain partially or completely sterile, resulting in total loss in yield. The disease spreads in
+                nature by different leafhopper species, among them Orosius orientalis was reported as the
+                major vector. No resistant germplasm has been identified till date and no precise integrated
+                management approaches are available to combat the disease. In this study we are attempting
+                to predict the disease using computer vision and deep learning models. The study presents a
+                detailed exploration of Mobile NetV2 for addressing the disease detection problem,
+                emphasizing the optimization of accuracy and efficiency. Transfer learning and
+                hyperparameter tuning were employed to enhance model performance, and our findings show
+                significant improvements in key metrics.</p>
             </div>
           </div>
-        </div> -->
-        <!-- Add more cards for additional research papers -->
+        </div>
       </div>
     </div>
-    </div>
   </section>
-  
+
   <!-- Grouped section for Technical Skills, Certifications, and Strengths -->
   <section class="fade-in py-5 content-container">
     <div class="container">
@@ -222,37 +352,39 @@
         <div class="col-lg-4">
           <h2>Technical Skills</h2>
           <ul class="list-group">
-            <li class="list-group-item">Programming languages – Python, Java, C, JavaScript, PHP, HTML, CSS.</li>
-            <li class="list-group-item">Virtualization – VMWare</li>
-            <li class="list-group-item">Development Tools- VS Code, GitHub, PyCharm, XAMPP, ChatGPT</li>
-            <li class="list-group-item">Frameworks – React.js, Node.js, React Native</li>
-            <li class="list-group-item">Cloud Technologies – Azure, AWS</li>
-            <li class="list-group-item">Databases – MySQL</li>
-            <li class="list-group-item">Operating Systems – Linux, Windows, Raspbian & MacOS.</li>
+            <li class="list-group-item">Programming Languages: Java, Python, C, Typescript, PHP</li>
+            <li class="list-group-item">Virtualization: VMWare</li>
+            <li class="list-group-item">Development Tools: VS Code, GitHub, PyCharm, XAMPP, Co-pilot, ChatGPT</li>
+            <li class="list-group-item">Frameworks: React.js, Node.js, React Native</li>
+            <li class="list-group-item">Cloud Technologies: Azure, AWS</li>
+            <li class="list-group-item">Databases: MySQL, MongoDB</li>
+            <li class="list-group-item">Operating Systems: Linux, Windows, Raspbian & MacOS</li>
+            <li class="list-group-item">AI/ML: TensorFlow, PyTorch, Computer Vision, NLP</li>
           </ul>
         </div>
         <div class="col-lg-4">
           <h2>Certifications</h2>
           <ul class="list-group">
-            <li class="list-group-item">Amazon-Certified Cloud Practitioner</li>
-            <li class="list-group-item">Microsoft-Certified Azure Fundamentals</li>
-            <li class="list-group-item">Red Hat Certified Enterprise Application Developer</li>
-            <li class="list-group-item">IBM: Data Science Badge</li>
+            <li class="list-group-item">Azure Fundamentals</li>
+            <li class="list-group-item">AWS Academy Cloud Foundations</li>
+            <li class="list-group-item">AWS Academy Machine Learning Foundations</li>
+            <li class="list-group-item">AWS Academy Cloud Web Application Developer</li>
+            <li class="list-group-item">AWS Cloud Practitioner</li>
+            <li class="list-group-item">RedHat Certified Enterprise Application Developer</li>
+            <li class="list-group-item">Python Institute Certified Entry level programmer</li>
+            <li class="list-group-item">Python for Everybody Specialization</li>
           </ul>
         </div>
         <div class="col-lg-4">
           <h2>Strengths</h2>
           <ul class="list-group">
-            <li class="list-group-item">Effective communication skills, both oral and written & Good interpersonal
-              skills.</li>
-            <li class="list-group-item">High energy level.</li>
-            <li class="list-group-item">Commendable technical skills.</li>
-            <li class="list-group-item">Strong goal and results-oriented with proven success in setting and meeting
-              objectives.</li>
-            <li class="list-group-item">Proven ability to design solutions and manage projects without supervision.</li>
-            <li class="list-group-item">Service delivery and customer-focused with strong analytical & problem-solving
-              Skills.</li>
-            <li class="list-group-item">Accustomed to working in a variety of team structures.</li>
+            <li class="list-group-item">Skilled at building and maintaining professional relationships</li>
+            <li class="list-group-item">Proactive and enthusiastic approach to challenges</li>
+            <li class="list-group-item">Expert in designing innovative technical solutions</li>
+            <li class="list-group-item">Results-driven with proven track record of achieving objectives</li>
+            <li class="list-group-item">Independent problem solver with minimal supervision needs</li>
+            <li class="list-group-item">Strong analytical and problem-solving abilities</li>
+            <li class="list-group-item">Adaptable leader with proven project management expertise</li>
           </ul>
         </div>
       </div>
@@ -294,21 +426,25 @@
       const container = document.getElementById('scrolling-container');
       const imageContainer = document.getElementById('image-container');
       const images = Array.from(imageContainer.children);
+      const totalWidth = imageContainer.scrollWidth / 2; // Since we have duplicate images
 
-      let scrollSpeed = 2; // Adjust this value to control scroll speed
-      let containerWidth = container.offsetWidth;
-      let totalWidth = imageContainer.scrollWidth;
-
-      function scrollImages() {
-        if (imageContainer.scrollLeft >= totalWidth / 2) {
+      function resetScroll() {
+        if (imageContainer.scrollLeft >= totalWidth) {
           imageContainer.scrollLeft = 0;
-        } else {
-          imageContainer.scrollLeft += scrollSpeed;
         }
-        requestAnimationFrame(scrollImages);
       }
 
-      scrollImages();
+      // Add scroll event listener
+      imageContainer.addEventListener('scroll', resetScroll);
+
+      // Optional: Pause animation on hover
+      imageContainer.addEventListener('mouseenter', () => {
+        imageContainer.style.animationPlayState = 'paused';
+      });
+
+      imageContainer.addEventListener('mouseleave', () => {
+        imageContainer.style.animationPlayState = 'running';
+      });
     });
   </script>
 </body>

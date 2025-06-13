@@ -1,49 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sreekar's Certificates</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="index.css">
-  <!-- <link rel="stylesheet" href="certificates.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   <style>
-    ul {
-      list-style-type: none;
+    .certificate-card {
+      background: var(--background);
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .certificate-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .certificate-card:hover .certificate-image {
+      transform: scale(1.05);
+    }
+
+    .certificate-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .certificate-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .certificate-issuer {
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .certificate-date {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+    }
+
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .certificate-category {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .modal-content {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .modal-body {
       padding: 0;
     }
 
-    li {
-      margin-bottom: 0.5vw;
-      background-color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    body {
-      justify-content: center;
-    }
-
-    table {
-      width: 90vw;
-      margin-top: 2vh;
-    }
-
-    table img {
+    .modal-body img {
       width: 100%;
+      height: auto;
     }
 
-    table td {
-      padding: 2vw;
+    .certificate-link {
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .certificate-link:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .hackathon-section {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 3rem 0;
+      margin-top: 3rem;
+    }
+
+    .hackathon-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .hackathon-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .hackathon-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .hackathon-image {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hackathon-name {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .hackathon-date {
+      font-size: 0.875rem;
+      opacity: 0.9;
     }
   </style>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
     <a class="navbar-brand" href="#">Satya Sreekar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -55,100 +176,171 @@
           <a class="nav-link" href="/projects.html">Projects</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/certificates.html">Certificates <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/certificates.html">Certificates<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="mailto:satyasreekarpattaswami@gmail.com">Contact</a>
         </li>
       </ul>
+      </div>
     </div>
   </nav>
 
-</head>
-
-<body>
   <header>
     <h1>My Certificates</h1>
   </header>
-  <table>
-    <tr>
-      <td>
-        <img src="Certificates/Coursera Introduction to TensorFlow.jpg" alt="">
-      </td>
-      <td>
-        <img src="Certificates/Coursera Convolutional Neural Networks in TensorFlow.jpg" alt="">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="Certificates/AWS_Academy_Graduate___AWS_Academy_Machine_Learning_Foundations.jpg" alt="">
-      </td>
-      <td>
-        <img src="Certificates/Coursera Python for Everybody.jpg" alt="">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="Certificates/Coursera PY with DBs.jpg" alt="">
-      </td>
-      <td>
-        <img src="Certificates/Coursera Using Python to Access Web Data.jpg" alt="">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="Certificates/Coursera Programming for Everybody.jpg" alt="">
-      </td>
-      <td>
-        <img src="Certificates/Coursera Capstone.jpg" alt="">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="Certificates/Coursera Python Data Structures.jpg" alt="">
-      </td>
-      <td>
-        <img src="Certificates/AWS Certified Cloud Practitioner.jpg" alt="">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="Certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations.jpg" alt="">
-      </td>
-      <td>
-        <img src="Certificates/Python_for_Data_Science_Badge.jpg" alt="">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="Certificates/Accenture.jpg" alt="">
-      </td>
-      <td>
-        <img src="Certificates/Cloud_Core.jpg" alt="">
-      </td>
-    </tr>
-    <tr>
-      <th colspan="2">
-        <center>
-          <h1>
-            Hackathons
-          </h1>
-        </center>
-      </th>
-    </tr>
-    <tr>
-      <td>
-        <img src="Certificates/IMPACTECH-2024.jpg" alt="" style="height: auto; max-width: 40vw;">
-      </td>
-      <td>
-        <img src="Certificates/EPITOME-23.jpg" alt="" style="height: auto; max-width: 40vw;">
-      </td>
-      </tr>
 
-  </table>
-</body>
+  <div class="container">
+    <h2 class="certificate-category">Cloud & DevOps</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/AWS Certified Cloud Practitioner.jpg">
+          <img src="Certificates/AWS Certified Cloud Practitioner.jpg" alt="AWS Cloud Practitioner" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">Amazon Web Services</div>
+            <h3 class="certificate-title">AWS Certified Cloud Practitioner</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations.jpg">
+          <img src="Certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations.jpg" alt="AWS Academy Cloud Foundations" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">AWS Academy</div>
+            <h3 class="certificate-title">AWS Academy Cloud Foundations</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/Cloud_Core.jpg">
+          <img src="Certificates/Cloud_Core.jpg" alt="Cloud Core" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">Microsoft</div>
+            <h3 class="certificate-title">Cloud Core</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <h2 class="certificate-category">Machine Learning & Data Science</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/Coursera Introduction to TensorFlow.jpg">
+          <img src="Certificates/Coursera Introduction to TensorFlow.jpg" alt="Introduction to TensorFlow" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">Coursera</div>
+            <h3 class="certificate-title">Introduction to TensorFlow</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/Coursera Convolutional Neural Networks in TensorFlow.jpg">
+          <img src="Certificates/Coursera Convolutional Neural Networks in TensorFlow.jpg" alt="CNN in TensorFlow" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">Coursera</div>
+            <h3 class="certificate-title">Convolutional Neural Networks in TensorFlow</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/Python_for_Data_Science_Badge.jpg">
+          <img src="Certificates/Python_for_Data_Science_Badge.jpg" alt="Python for Data Science" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">IBM</div>
+            <h3 class="certificate-title">Python for Data Science</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <h2 class="certificate-category">Programming & Development</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/Coursera Python for Everybody.jpg">
+          <img src="Certificates/Coursera Python for Everybody.jpg" alt="Python for Everybody" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">Coursera</div>
+            <h3 class="certificate-title">Python for Everybody</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/Coursera PY with DBs.jpg">
+          <img src="Certificates/Coursera PY with DBs.jpg" alt="Python with Databases" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">Coursera</div>
+            <h3 class="certificate-title">Python with Databases</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="certificate-card">
+        <a href="#" class="certificate-link" data-toggle="modal" data-target="#certificateModal" data-image="Certificates/Coursera Web Data.jpg">
+          <img src="Certificates/Coursera Web Data.jpg" alt="Web Data" class="certificate-image">
+          <div class="certificate-content">
+            <div class="certificate-issuer">Coursera</div>
+            <h3 class="certificate-title">Web Data</h3>
+            <div class="certificate-date">2023</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hackathon-section">
+    <div class="container">
+      <h2 class="hackathon-title">Hackathons</h2>
+      <div class="certificates-grid">
+        <div class="hackathon-card">
+          <img src="Certificates/IMPACTECH-2024.jpg" alt="IMPACTECH 2024" class="hackathon-image">
+          <h3 class="hackathon-name">IMPACTECH 2024</h3>
+          <div class="hackathon-date">2024</div>
+        </div>
+
+        <div class="hackathon-card">
+          <img src="Certificates/EPITOME-23.jpg" alt="EPITOME 2023" class="hackathon-image">
+          <h3 class="hackathon-name">EPITOME 2023</h3>
+          <div class="hackathon-date">2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div class="modal fade" id="certificateModal" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" alt="Certificate" id="modalCertificateImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+  <script>
+    $(document).ready(function() {
+      $('.certificate-link').click(function() {
+        var imageSrc = $(this).data('image');
+        $('#modalCertificateImage').attr('src', imageSrc);
+      });
+    });
+  </script>
+</body>
 </html>
